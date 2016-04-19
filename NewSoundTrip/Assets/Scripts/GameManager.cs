@@ -7,10 +7,6 @@ public class GameManager : MonoBehaviour {
 	public Camera	rightCamera;
 	private bool	vertical = false;
 
-	void Start () {
-	
-	}
-	
 	void Update () {
 		if (Application.platform == RuntimePlatform.Android) {
 			if (vertical == false && Screen.orientation == ScreenOrientation.Portrait) {
