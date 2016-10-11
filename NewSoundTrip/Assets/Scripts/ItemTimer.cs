@@ -15,9 +15,9 @@ public class ItemTimer : MonoBehaviour {
 	void Start () {
 		if (isOn) {
 			print("item timer start");
-			if (File.Exists("Assets/SongFiles/" + filename))
-				File.Delete("Assets/SongFiles/" + filename);
-			sw = File.CreateText("Assets/SongFiles/" + filename);
+			if (File.Exists(Application.dataPath + "/Resources/SongFiles/" + filename))
+				File.Delete(Application.dataPath + "/Resources/SongFiles/" + filename);
+			sw = File.CreateText(Application.dataPath + "/Resources/SongFiles/" + filename);
 		}
 	}
 	
